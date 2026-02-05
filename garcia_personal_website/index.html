@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argie Garcia - BINTECH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global */
+        html { scroll-behavior: smooth; }
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: url('images/Web Design Houston Texas.jpg') no-repeat center center fixed; /* Keep or replace */
+            background-size: cover;
+            color: #333; /* Dark text for contrast */
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0,119,255,0.3); /* Semi-transparent blue */
+            backdrop-filter: blur(2px);
+            z-index: -1;
+        }
+
+        /* Header */
+        header {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.7); /* White with transparency */
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 { font-size: 30px; margin-bottom: 5px; color: #0077ff; /* Blue heading */ }
+        header h3 { font-weight: 300; font-size: 16px; opacity: 0.8; }
+
+        /* Navigation */
+        nav {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 8px 0;
+            backdrop-filter: blur(8px);
+            background: rgba(255,255,255,0.5); /* White with transparency */
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-radius: 0 0 15px 15px;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #0077ff; /* Blue links */
+            padding: 5px 10px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background: rgba(0,119,255,0.2); /* Light blue hover */
+            color: #003366; /* Darker blue on hover */
+        }
+
+        /* Profile Photo */
+        .profile-photo { text-align: center; margin-top: 15px; }
+        .profile-photo img {
+            width: 50%;
+            max-width: 150px;
+            border-radius: 50%;
+            border: 3px solid rgba(255,255,255,0.6);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Content Containers */
+        section, .content-box {
+            backdrop-filter: blur(10px);
+            background: rgba(255,255,255,0.6); /* White with transparency */
+            margin: 15px auto;
+            padding: 15px 20px;
+            width: 70%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            color: #333;
+        }
+
+        /* Titles */
+        h2 { font-size: 18px; border-left: 4px solid #0077ff; padding-left: 6px; color: #0055aa; /* Darker blue */ }
+
+        /* Lists */
+        ul li { margin-bottom: 5px; }
+        ul li:hover { color: #0077ff; cursor: pointer; }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 12px;
+            margin-top: 20px;
+            backdrop-filter: blur(10px);
+            background: rgba(255,255,255,0.5); /* White with transparency */
+            border-radius: 15px 15px 0 0;
+        }
+
+        /* Back to Top Button */
+        #back-to-top {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            background: #0077ff; /* Blue button */
+            color: #fff;
+            padding: 8px 12px;
+            font-size: 16px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        /* Mobile Friendly */
+        @media (max-width: 600px) {
+            header h1 { font-size: 24px; }
+            nav { flex-direction: column; gap: 6px; }
+            nav a { padding: 5px 8px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Argie Amedo Garcia</h1>
+        <h3>BINTECH - Computer and Information Technology</h3>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#aboutmyself">About Me</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <div class="profile-photo">
+        <img src="images/Sevvy.jpg" alt="Profile Photo">
+    </div>
+
+    <div class="content-box">
+        IT Student & Rap Artist
+    </div>
+
+    <section id="home">
+        <h2>Profile Summary</h2>
+        <p>
+            Dedicated IT student with a passion for software development and digital solutions. Also an independent rap artist, showcasing creativity and communication skills.
+        </p>
+    </section>
+
+    <section id="aboutmyself">
+        <h2>Academic Pursuits</h2>
+        <p>
+            Degree: BINTECH, Major in Computer and Information Technology <br>
+            Status: First Semester, SY 2025-2026
+        </p>
+
+        <h2>Professional Background</h2>
+        <ul>
+            <li>Poultry Nutritionist</li>
+            <li>Line Cook</li>
+            <li>CNC Machinist / Operator</li>
+            <li>Concrete Pump Operator</li>
+        </ul>
+
+        <h2>Certifications</h2>
+        <ul>
+            <li>NC-2 PASSER: Driving (TESDA)</li>
+            <li>NC-2 PASSER: MASONRY (TESDA)</li>
+        </ul>
+
+        <h2>Personal Details</h2>
+        <p>
+            Name: ARGIE A. GARCIA <br>
+            Alias: Rbreezy / RaRa <br>
+            Born: 1994/09/13 <br>
+            Address: Mati City, Davao Oriental
+        </p>
+    </section>
+
+    <section id="contact">
+        <h2>Stay Connected</h2>
+        <p>
+            Facebook: <a href="https://www.facebook.com/rara.aicrag" target="_blank" style="color:#0055aa;">facebook.com/rara.aicrag</a><br>
+            Email: <a href="mailto:romantikongrapper@gmail.com" style="color:#0055aa;">romantikongrapper@gmail.com</a>
+        </p>
+    </section>
+
+    <footer>
+        © 2025 Argie Garcia
+    </footer>
+
+    <div id="back-to-top" onclick="scrollToTop()">↑</div>
+
+    <script>
+        window.onscroll = function() {
+            const btn = document.getElementById('back-to-top');
+            btn.style.display = (window.scrollY > 200) ? "block" : "none";
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
